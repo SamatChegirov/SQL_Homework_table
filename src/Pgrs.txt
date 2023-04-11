@@ -1,0 +1,49 @@
+create table data_types(
+	id serial primary key,
+	boolean_tf varchar,
+	numeric_nc varchar,
+	character_ch varchar,
+	integral_l varchar
+);
+create table integer(
+	id serial primary key,
+	byte_b varchar,
+	short_s varchar,
+	int_i varchar,
+	long_l varchar,
+	data_types_id integer references data_types(id)
+);
+drop table integer;
+
+insert into data_types(boolean_tf, numeric_nc, character_ch, integral_l)
+values ('True', 'Char_integ', 'Char', 'Integer'),
+		('False', 'Integ_char', 'Char', 'Int');
+
+insert into integer(byte_b, short_s, int_i, long_l, data_types_id)
+values ('byte', 'chort', 'int', 'long', 1);
+
+create table animals(
+	id serial primary key,
+	pets varchar,
+	wild varchar
+);
+
+create table dogs(
+	id serial primary key,
+	name varchar not null,
+	breed varchar,
+	age int,
+	weight int,
+	animals_id integer references animals(id)
+);
+
+insert into animals(pets, wild)
+values ('dogs', 'wolwes'),
+		('cats', 'tigers'),
+		('cows', 'bears'),
+		('horses', 'deer');
+
+insert into dogs(name, breed, age, weight, animals_id)
+values  ('Sharik', 'Haski', 3, 60, 1),
+		('Laika', 'Taygan', 2, 80, 1),
+		('Tuzik', 'Ovcharka', 3, 70, 1);

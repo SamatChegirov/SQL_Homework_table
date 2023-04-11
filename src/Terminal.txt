@@ -1,0 +1,66 @@
+Server [localhost]:
+Database [postgres]:
+Port [5432]:
+Username [postgres]:
+Пароль пользователя postgres:
+psql (15.2)
+ПРЕДУПРЕЖДЕНИЕ: Кодовая страница консоли (866) отличается от основной
+                страницы Windows (1251).
+                8-битовые (русские) символы могут отображаться некорректно.
+                Подробнее об этом смотрите документацию psql, раздел
+                "Notes for Windows users".
+Введите "help", чтобы получить справку.
+
+postgres=# create table lists(id serial primary key, arraylist varchar, linkedlist varchar, vector varchar, collection_id integer references collection(id);
+postgres(# sreate table lists(id serial primary key, arraylist varchar, limkedlist varchar, vector varchar, collection_id integer references collection(id);
+postgres(# \d
+                         ╤яшёюъ юЄэю°хэшщ
+ ╤їхьр  |           ╚ь            |        ╥шя         | ┬ырфхыхЎ
+--------+-------------------------+--------------------+----------
+ public | animals                 | ЄрсышЎр            | postgres
+ public | animals_id_seq          | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | book                    | ЄрсышЎр            | postgres
+ public | book_id_seq             | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | cars                    | ЄрсышЎр            | postgres
+ public | cars_id_seq             | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | collection              | ЄрсышЎр            | postgres
+ public | collection_id_seq       | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | computer                | ЄрсышЎр            | postgres
+ public | computer_id_seq         | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | data_types              | ЄрсышЎр            | postgres
+ public | data_types_id_seq       | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | department              | ЄрсышЎр            | postgres
+ public | department_id_seq       | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | director                | ЄрсышЎр            | postgres
+ public | director_id_seq         | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | dogs                    | ЄрсышЎр            | postgres
+ public | dogs_id_seq             | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | employee                | ЄрсышЎр            | postgres
+ public | employee_id_seq         | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | integer                 | ЄрсышЎр            | postgres
+ public | integer_id_seq          | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | job                     | ЄрсышЎр            | postgres
+ public | job_id_seq              | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | library                 | ЄрсышЎр            | postgres
+ public | library_id_seq          | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | medical_overalls        | ЄрсышЎр            | postgres
+ public | medical_overalls_id_seq | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | passport                | ЄрсышЎр            | postgres
+ public | passport_id_seq         | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | people                  | ЄрсышЎр            | postgres
+ public | people_id_seq           | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | person                  | ЄрсышЎр            | postgres
+ public | person_id_seq           | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | shops                   | ЄрсышЎр            | postgres
+ public | shops_id_seq            | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | stud                    | ЄрсышЎр            | postgres
+ public | stud_id_seq             | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | technique               | ЄрсышЎр            | postgres
+ public | technique_id_seq        | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | users                   | ЄрсышЎр            | postgres
+ public | users_id_seq            | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | worker                  | ЄрсышЎр            | postgres
+ public | worker_id_seq           | яюёыхфютрЄхы№эюёЄ№ | postgres
+ public | workwear                | ЄрсышЎр            | postgres
+ public | workwear_id_seq         | яюёыхфютрЄхы№эюёЄ№ | postgres
+(46 ёЄЁюъ)
